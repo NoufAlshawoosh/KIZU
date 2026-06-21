@@ -33,6 +33,7 @@ struct BoardsListView: View {
             HStack(alignment: .top) {
                 Text("My Boards")
                     .font(.title2.bold())
+                    .foregroundStyle(.black)
                     .accessibilityAddTraits(.isHeader)
                 Text(Date(), style: .date)
                     .font(.subheadline)
@@ -55,6 +56,7 @@ struct BoardsListView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Current Board")
                     .font(.headline)
+                    .foregroundStyle(.black)
                     .accessibilityAddTraits(.isHeader)
 
                 BoardCard(
@@ -71,6 +73,7 @@ struct BoardsListView: View {
 
                 Text("My Previous Boards")
                     .font(.headline)
+                    .foregroundStyle(.black)
                     .accessibilityAddTraits(.isHeader)
 
                 ScrollView {

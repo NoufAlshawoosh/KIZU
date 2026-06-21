@@ -74,6 +74,7 @@ struct BoardDetailView: View {
                     ScrollView {
                         Text(text.isEmpty ? "No reflection written." : text)
                             .font(.body)
+                            .foregroundStyle(.black)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding()
                     }

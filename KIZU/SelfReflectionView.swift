@@ -21,7 +21,7 @@ struct SelfReflectionView: View {
             VStack {
                 HStack {
                     Button { dismiss() } label: {
-                        Image(systemName: "arrow.backward")
+                        Image(systemName: "chevron.left")
                             .foregroundColor(.black)
                     }
                     .accessibilityLabel("Cancel")
@@ -43,6 +43,7 @@ struct SelfReflectionView: View {
                 .padding(.top, 50)
 
                 TextEditor(text: $reflectionText)
+                    .foregroundColor(.black)
                     .scrollContentBackground(.hidden)
                     .padding()
                     .background(backgroundColor)

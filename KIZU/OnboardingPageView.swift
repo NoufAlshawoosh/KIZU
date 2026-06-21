@@ -62,6 +62,7 @@ struct OnboardingPageView: View {
 
                     Text("KIZU (傷) is Japanese word means wound.")
                         .font(.body)
+                        .foregroundStyle(.black)
                         .opacity(showText ? 1 : 0)
                         .animation(reduceMotion ? .none : .easeIn(duration: 0.5), value: showText)
 
@@ -69,6 +70,7 @@ struct OnboardingPageView: View {
 
                     Text("This name was inspired by an impactful story.")
                         .font(.body)
+                        .foregroundStyle(.black)
                         .opacity(showText ? 1 : 0)
                         .animation(reduceMotion ? .none : .easeIn(duration: 0.5), value: showText)
 
